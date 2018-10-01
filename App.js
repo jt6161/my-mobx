@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {observable} from 'mobx';
+import Counter from './src/counter.js';
+import {Container, Content} from 'native-base';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app! HELLO WORLD</Text>
-      </View>
+        <Counter />
     );
   }
 }
